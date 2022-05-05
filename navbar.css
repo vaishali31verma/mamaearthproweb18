@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+}
+
+#main {
+    border: 1px solid rgb(199, 196, 196);
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#main>img {
+    width: 170px;
+    height: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+
+#icon {
+    display: flex;
+    /* border: 1px solid; */
+    width: 400px;
+    height: 70px;
+    margin-left: 700px;
+    gap: 70px;
+    justify-content: end;
+    align-items: center;
+    
+
+}
+#icon>div>p{
+    font-size: larger;
+}
+
+.icon {
+    margin-top: 25px;
+    font-size: 25px;
+    color: #00afef;
+    cursor: pointer;
+}
+
+.acc {
+    margin-top: -0.3px;
+    margin-left: -10px;
+    color: #2f3337;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+.lis {
+    margin-top: -0.3px;
+    color: #2f3337;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.cart {
+    margin-top: -0.3px;
+    color: #2f3337;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 15px;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#new {
+    display: flex;
+    gap: 40px;
+    font-weight: bolder;
+    color: rgb(74, 74, 74);
+    /* margin-left: 80px; */
+    border-bottom: 0.5px solid #2f3337;
+    padding-left: 80px;
+}
+#new>p>a{
+    color: #2f3337;
+    text-decoration: none;
+}
