@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="payment.js">
+
+
+</head>
+
+<body>
+    <div id="head">
+        <h3>Delivery Address</h3>
+    </div>
+    <form>
+        <div class="input"> <input type=" text" id="name" placeholder="first name*">
+            <input type="text" id="name" placeholder="last name*">
+        </div>
+        <div class="input"> <input type=" text" id="mail" placeholder="Email ID*">
+            <input placeholder="Phone Number*" id="Number" type="Number" />
+        </div>
+        <div class="input"><input placeholder="Pin Code*" id="pincode" type="Number" />
+            <input placeholder="City*" id="city" type="text" />
+            <input placeholder="State*" id="state" type="text" />
+        </div>
+        <div class="input"> <input placeholder="Address(House No,Building,Street,Area)*" id="add" type="text" />
+        </div>
+        <div class="input">
+            <p id="sd">Select the type of address</p>
+            <input type="submit" class="btn" value="Home" />
+            <input type="submit" class="btn" value="Work" />
+            <input type="submit" class="btn" value="Other" />
+        </div>
+        <div class="input">
+            <h3 class="title">Choose Payment Method</h3>
+            <p id="start">Pay Using Credit Card Or Debit Cards</p>
+        </div>
+        <div class="input"> <input type=" number" id="cardno" placeholder="Card Number">
+        </div>
+        <div class="input"> <input type="month" id="dc1" placeholder="MM/YY">
+            <input type="number" id="cvv" placeholder="CVV">
+        </div>
+        <div class="input"> <input placeholder="Name on the card" id="namec" type="text" />
+        </div>
+        <div class="input"> <input type="submit" value="Place Order" id="submitbtn">
+        </div>
+        <div>
+            <p id="end">100% Payment Protection, Easy Return Policy</p>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
