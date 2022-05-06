@@ -18,17 +18,17 @@ form.addEventListener("submit", function () {
         namec: document.getElementById("namec").value
 
     }
-    if (name == "" || name == "" || mail == "" || Number == "" || pincode == "" || city == "" || state == "") {
+    // if (name == "" || name == "" || mail == "" || Number == "" || pincode == "" || city == "" || state == "") {
 
-        alert("All the address fields are mandatory")
-    }
-    else if (cardno.length == 16 && cvv.length == 3) {
-        window.location.href = "index.html";
-    }
+    //     alert("All the address fields are mandatory")
+    // }
+    // else if (cardno.length == 16 && cvv.length == 3) {
+    //     window.location.href = "index.html";
+    // }
     
-    else {
-        alert("Invalid numbers");
-    }
+    // else {
+    //     alert("Invalid numbers");
+    // }
 
 
     Arr.push(obj)

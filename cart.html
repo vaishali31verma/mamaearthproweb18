@@ -177,7 +177,19 @@
     color: #2f3337;
     text-decoration: none;
 }
+.linesubmit{
+    color: #0d2128;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 7px;
+    
+}
+.Sub{
+    width: 90px;
+    margin-top: 4px;
+    border: 2px solid rgb(215, 187, 187);
 
+}
 
     </style>
 </head>
@@ -220,12 +232,13 @@ function totalsum(cartArr){
     },0)
     // console.log(sum)
   var subt = document.querySelector("h2") 
+  subt.setAttribute("class","linesubmit")
   subt.innerText=  "Your subtotal is:"+ sum
   }
 
      promocode = document.createElement("input")
      promocode.placeholder = "Apply promocode"
-    //  promocode.setAttribute("class","stotal")
+     promocode.setAttribute("class","stotal")
      promocode.setAttribute("type","text")
      
      prosubmit = document.createElement("submit")
