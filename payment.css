@@ -1,0 +1,141 @@
+* {
+    font-family: 'poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* outline: none;
+    border: none; */
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #00afef;
+}
+
+#name {
+    padding: 10px 50px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 0px;
+
+}
+
+#mail {
+    padding: 10px 50px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 0px;
+
+}
+
+#Number {
+    padding: 10px 50px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 0px;
+
+}
+
+#pincode,
+#city,
+#state {
+    padding: 10px 0px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 0px;
+}
+
+#add {
+    padding: 10px 250px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 0px;
+}
+
+#cardno {
+    padding: 10px 80px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 0px;
+}
+
+#dc1 {
+    padding: 5px 0px 5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 0px;
+    justify-content: space-evenly;
+}
+
+#cvv {
+    padding: 5px 0px 5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 0px;
+    justify-content: space-evenly;
+}
+
+#namec {
+    padding: 10px 80px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 0px;
+}
+
+#submitbtn {
+    padding: 10px 80px 10px 80px;
+}
+
+.btn {
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(216, 216, 216);
+    color: #000;
+    margin-top: 5px;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 15px;
+    gap: 25px;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #00afef;
+}
+
+.input {
+    display: block;
+    width: 70%;
+    margin: 1% a;
+    padding: 1% 50px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: normal;
+}
+
+#sd {
+    font-size: medium;
+    color: grey;
+}
+
+#start {
+    font-size: x-small;
+    color: rgb(73, 233, 73);
+    margin-top: 50px;
+}
+
+#end {
+    font-size: x-small;
+    color: rgb(33, 218, 33);
+    margin-top: -30px;
+    margin-left: 60px;
+}
+
+#submitbtn {
+    padding: 10px 80px 10px 80px;
+    font-size: 17px;
+    background-color: #00afef;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.title {
+    margin-top: 150px;
+}
