@@ -81,7 +81,7 @@
         }
 
         .sell {
-            background-color: rgb(214, 84, 66);
+            background-color: rgb(66, 214, 192);
             color: azure;
             width: 40%;
             position: absolute;
@@ -240,19 +240,32 @@
     color: #2f3337;
     text-decoration: none;
 }
+#inputbox {
+            width: 800px;
+            height: 25px;
+        }
+
+        #submit {
+            width: 9%;
+            color: white;
+            background-color: #00afef;
+            border-radius: 7px;
+            height: 30px;
+        }
+
+        #form {
+            display: flex;
+        }
     </style>
 </head>
 
 <body>
     <div id="main">
         <img src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale" alt="">
-        <div id="input">
-            <input type="text" placeholder="Search">
-            <div id="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <p>Search</p>
-            </div>
-        </div>
+        <form id="form">
+            <input type="text" placeholder="Search" value="" id="inputbox">
+            <input type="submit" value="Search" id="submit">
+        </form>
         <div id="icon">
             <div>
                 <i class="fa-solid fa-cart-shopping icon"></i>
@@ -315,17 +328,19 @@
     var homedata = [
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/c/h/charcoal-body-wash-1_znn27t24cu3q9szq.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Onion hair oil and oil for hair regrowth and hairfall control with ..",
-            dis1: "Boost hair growth 5 times",
+            dis: "Urban bodywash with termeric and saffron glowing skin with shining",
+            dis1: "bodywash with termeric",
             price: 300,
+            discription: "bodywash",
             review: "✨:4.8|✔:793 reviews",
             id:1
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/u/b/ubtan_bamboo_sheet_mask_1.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Onion hair oil and oil for hair regrowth and hairfall control with ..",
-            dis1: "Boost hair growth 5 times",
+            dis: "ubtan_bamboo_sheet_mask oil control and glowing skin with ..",
+            dis1: "ubtan_bamboo_sheet_mask",
             price: 340,
+            discription:"sheet",
             review: "✨:4.8|✔:793 reviews",
             id:2
 
@@ -333,100 +348,102 @@
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/r/o/rose_face_toner_1.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Onion hair oil and oil for hair regrowth and hairfall control with ..",
-            dis1: "Boost hair growth 5 times",
+            dis: " control oil on face improve skin cells  glowing skin with as rose with ..",
+            dis1: "rose_face_toner",
             price: 340,
+            discription:"toner",
             review: ":✨:4.8|✔:793 reviews",
             id:3
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/u/b/ubtan_scurb_wash_u8j8uwoqnpyohxlf.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Onion hair oil and oil for hair regrowth and hairfall control with ..",
-            dis1: "Boost hair growth 5 times",
+            dis: "ubtan_scurb_wash for glowing and bright skin and improving skin cells",
+            dis1: "ubtan_scurb_wash",
             price: 300,
+            discription:"scrub",
             review: ":✨:4.8|✔:793 reviews",
             id:4
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/h/a/hand-sanitizer_2_1_ubyzrys1ysiez22s.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Onion hair oil and oil for hair regrowth and hairfall control with ..",
-            dis1: "Boost hair growth 5 times",
+            dis: " hand-sanitizer to kill 100% bacteria and prevent from diseases..",
+            dis1: "hand-sanitizer",
             price: 300,
+            discription:"sanitizer",
             review: ":✨:4.8|:✔793 reviews",
             id:5,
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/b/h/bhringamla_oil_2.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Urban body Facewash with termeric and saffron glowing skin",
-            dis1: "Boost hair growth 5 times",
+            dis: "hair oil for 100% groeth of hairs urban bhringamla oil ",
+            dis1: "bhringamla oil",
             price: 290,
+            discription:"oil",
             review: ":✨:4.8|:✔ 793 reviews",
             id:6
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/a/q/aqua-glow-face-serum-1.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Urban body Facescrub with termeric and saffron glowing skin",
-            dis1: "Boost hair growth 5 times",
+            dis: "Urban body Facescrub with menthol gel scrub for  glowing skin",
+            dis1: " body Facescrub gel",
             price: 322,
+            discription:"scrub",
             review: ":✨:4.8|✔:793 reviews",
             id:7
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/a/q/aqua-glow-face-wash.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Eyes open source face oil for sun tan",
+            dis: "Eyes open source face mask for sun tan",
             dis1: "Tightning pores with nicacinamide non greacy",
             price: 234,
+            discription:"mask",
             review: ":✨:4.8|::793 reviews",
             id:8
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/c/h/charcoal-body-wash-1_znn27t24cu3q9szq.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Bye Bye wrinkle face cream with goodness of neem",
-            dis1: "Tightning pores with nicacinamide non greacy",
-            price: 234,
-            review: ":✨:4.8|::793 reviews",
+            dis: "Charcoal Face Wash with Activated Charcoal and Coffee for Oil Control - 250ml",
+            dis1: "Pollution Defense Formula | Controls Excess Oil",
+            price: 399,
+            discription: "bodywash",
+            review: "✨4.8|✔793 reviews",
             id:9
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/u/b/ubtan_face_scrub_1.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Bye Bye wrinkle facesheet mast with goodness of neem",
+            dis: "Bye Bye wrinkle facescrub  with goodness of neem",
             dis1: "Tightning pores with nicacinamide non greacy",
             price: 99,
+            discription:"scrub",
             review: ":✨:4.8|::793 reviews",
             id:10
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/a/l/aloe-vera-sunscreen-face-serum.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Bye Bye wrinkle facesheet mast with goodness of neem",
+            dis: "Bye Bye wrinkle facesheet mast with goodness of Aloevera",
             dis1: "Tightning pores with nicacinamide non greacy",
-            price: 99,
+            price: 399,
+            discription:"gel",
             review: ":✨:4.8|::793 reviews",
             id:11
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/c/o/coco-lip-balm_1_1.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Bye Bye wrinkle facesheet mast with goodness of neem",
-            dis1: "Tightning pores with nicacinamide non greacy",
-            price: 99,
-            review: ":✨:4.8|::793 reviews",
-            id:12
-        },
-        {
-            img_url: "https://honasa-mamaearth-production.imgix.net/c/h/cherry-lip-balm_1_1.jpg?auto=compress&fit=scale&w=400&h=400",
-            dis: "Bye Bye wrinkle facesheet mast with goodness of neem",
-            dis1: "Tightning pores with nicacinamide non greacy",
-            price: 99,
-            review: ":✨:4.8|::793 reviews",
-            id:13
-
-        },
+            dis: "Ubtan Tinted 100% Natural Lip Balm with Turmeric & Saffron - 2 g",
+            dis1: "12-Hour Moisturization | Heals Dry & Chapped Lip",
+            price: 299,
+            discription: "lipblam",
+            review: "✨4.8|✔793 reviews",
+            id: 12
+        }
     ]
-    // document.querySelector(".lis").innerText= cartArr.length
+ 
     function setnewimg() {
         imaged = document.getElementById("logo")
         let images = ["https://images.ctfassets.net/66mrrren2unf/5dElTf4nIm0q7zDEmWgU4j/bcd1ab0f30ea5fef52e00b2436658dcb/Desktop_Henna-Paste-with-CTA.jpg?q=40",
             "https://images.ctfassets.net/66mrrren2unf/2nFAFSa68RorsrU94U5pO9/90708e3f5bd6f312d9911b63e4977a3e/desktop-body-wash.jpg?q=40", "https://images.ctfassets.net/66mrrren2unf/4ZxCZpdHR9x7MBSqyxGVg2/b118c0c231fcc43c8531479834cba44f/Desktop.jpg?q=40",
             "https://images.ctfassets.net/66mrrren2unf/4usS7VI6DjrDrBwNpl5ngu/580d570b03cf60849ec9682467b3fce4/Desktop.jpg?q=40"]
+
         let imageslength = images.length;
         let randomnum = Math.random();
         randomnum = randomnum * imageslength;
@@ -434,61 +451,102 @@
         let chooseimage = images[randomnum]
         imaged.src = chooseimage
 
-        var arrAddcart = JSON.parse(localStorage.getItem("cartdata")) || [];
+
+
         display(homedata)
+        var form = document.getElementById("form")
+    form.addEventListener("submit", function () {
+        searching()
+    })
+
+    function searching() {
+        event.preventDefault()
+
+        var dis = form.inputbox.value
+        var X = homedata.filter(function (ele) {
+            if (ele.discription == dis)
+                return ele.discription
+        });
+
+        display(X)
+    }
+
+
+
         function display(data) {
+            document.querySelector(".conatiner").innerHTML = ""
             data.forEach(function (ele) {
                 var dataofbeautypro = document.querySelector(".conatiner")
+
                 div1 = document.createElement("div")
-                div1.setAttribute("id", "box")
+
+
                 img = document.createElement("img")
                 img.src = ele.img_url
+
                 disp = document.createElement("p")
                 disp.innerText = ele.dis
+
+
+
                 h5 = document.createElement("h5")
                 h5.innerText = ele.dis1
+
+                dis = document.createElement("h5")
+                dis.setAttribute("id", disp)
+                dis.innerText = ele.discription
+
                 rs = document.createElement("p")
                 rs.setAttribute("class", "rs")
-                rs.innerText = "Rs"+ele.price
+                rs.innerText = "Rs" + ele.price
+
+
                 h6 = document.createElement("h6")
                 h6.innerText = ele.review
+
                 buttom = document.createElement("button")
                 buttom.setAttribute("class", "addcart")
-                buttom.innerText = "Add to Cart"
                 buttom.innerText = "Add to Cart"
                 buttom.addEventListener("click", function () {
                     addtocart(ele)
                 })
 
-
-
                 sell = document.createElement("div")
                 sell.setAttribute("class", "sell")
                 sell.innerText = "BestSeller"
+
+
                 div1.append(img, disp, h5, rs, h6, buttom, sell)
                 dataofbeautypro.append(div1)
             })
+
         }
-    }
-    var cartArr = JSON.parse(localStorage.getItem("cartdata")) || [];
-    document.querySelector(".lis").innerText= cartArr.length
-    function addtocart(ele) {
-   
-      var exist = cartArr.filter(function(el){
-          return ele.id == el.id
-      })
-      if(exist.length>0){
-          alert("product already exist")
-      }
-      else{
-        ele.quan = 1 
-        cartArr.push(ele)
-        localStorage.setItem("cartdata",JSON.stringify(cartArr));
-        alert("product added sucessfully")
-        document.querySelector(".lis").innerText= cartArr.length
-      }
 
     }
+  
+
+
+    var cartArr = JSON.parse(localStorage.getItem("cartdata")) || [];
+    document.querySelector(".lis").innerText = cartArr.length
+    function addtocart(ele) {
+
+        var exist = cartArr.filter(function (el) {
+            return ele.id == el.id
+        })
+        if (exist.length > 0) {
+            alert("product already exist")
+
+        }
+        else {
+            ele.quan = 1
+            cartArr.push(ele)
+            localStorage.setItem("cartdata", JSON.stringify(cartArr));
+            alert("product added sucessfully")
+            document.querySelector(".lis").innerText = cartArr.length
+        }
+
+    }
+
 
     document.querySelector(".acc").addEventListener("click", function () {
         window.location.href = "login.html"
@@ -501,7 +559,6 @@
 
     var login = JSON.parse(localStorage.getItem("login"))
     document.querySelector(".acc").innerText = login.fullName
-
 
 
 

@@ -170,7 +170,7 @@
     font-weight: bolder;
     color: rgb(74, 74, 74);
     /* margin-left: 80px; */
-    border-bottom: 0.5px solid #2f3337;
+    /* border-bottom: 0.5px solid #2f3337; */
     padding-left: 80px;
 }
 #new>p>a{
@@ -186,8 +186,9 @@
         <div id="main">
             <img src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale" alt="">
             <div id="icon">
-                    <div>
-                        <p class="acc">Login</p>
+                    <div id="new">
+        
+                        <p class="acc"><a href="login.html">Login</a></p>
                     </div>
                     <div>
                         <p class="acc">payment</p>
@@ -202,9 +203,7 @@
     
     
         </div>
-    <div class="conatiner">
-        
-        
+    <div class="conatiner"> 
     </div>
 </body>
 </html>
@@ -222,10 +221,7 @@ function totalsum(cartArr){
     // console.log(sum)
   var subt = document.querySelector("h2") 
   subt.innerText=  "Your subtotal is:"+ sum
-
-
-  
-}
+  }
 
      promocode = document.createElement("input")
      promocode.placeholder = "Apply promocode"

@@ -239,19 +239,32 @@
     color: #2f3337;
     text-decoration: none;
 }
+#inputbox {
+            width: 800px;
+            height: 25px;
+        }
+
+        #submit {
+            width: 9%;
+            color: white;
+            background-color: #00afef;
+            border-radius: 7px;
+            height: 30px;
+        }
+
+        #form {
+            display: flex;
+        }
    </style>
 </head>
 
 <body>
    <div id="main">
       <img src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale" alt="">
-      <div id="input">
-          <input type="text" placeholder="Search">
-          <div id="search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <p>Search</p>
-          </div>
-      </div>
+      <form id="form">
+         <input type="text" placeholder="Search" value="" id="inputbox">
+         <input type="submit" value="Search" id="submit">
+     </form>
       <div id="icon">
           <div>
               <i class="fa-solid fa-cart-shopping icon"></i>
@@ -321,6 +334,7 @@ var product = [
          dis1: "Natural Cleansers|Tear-Free Formula",
          review: ":✨:4.8|:✅:793 reviews",
          price: 399,
+         discription: "cleanser",
          id:101,
       },
 
@@ -330,6 +344,7 @@ var product = [
          dis1: "Moisturizes|Smoothes|Heals Chapped Skin",
          review: ":✨:4.8|:✅:793 reviews",
          price: 199,
+         discription: "cream",
          id:102,
       },
 
@@ -339,6 +354,7 @@ var product = [
          dis1: "Natural Cleansers | Tear-Free Formula",
          review: ":✨:4.8|:✅:793 reviews",
          price: 399,
+         discription: "cleanser",
          id:103,
 
       },
@@ -349,6 +365,7 @@ var product = [
          dis1: "Retains Moisture | Cleanses Gently | pH Balanced",
          review: ":✨:4.8|:✅:793 reviews",
          price: 249,
+         discription: "cream",
          id:104
       },
 
@@ -358,6 +375,7 @@ var product = [
          dis1: "Natural Cleansers | Tear-Free Formula",
          review: ":✨:4.8|:✅:793 reviews",
          price: 398,
+         discription:"Body wash",
          id:105
       },
 
@@ -367,6 +385,7 @@ var product = [
          dis1: "Treats Dry Scalp | Stimulates New Hair Growth",
          review: ":✨:4.8|:✅:793 reviews",
          price: 399,
+         discription:"oil",
          id:106
       },
 
@@ -376,6 +395,7 @@ var product = [
          dis1: "Natural Cleansers | Tear-Free Formula",
          review: ":✨:4.8|:✅:793 reviews",
          price: 399,
+         discription:"bodywash",
          id:107
       },
 
@@ -385,6 +405,7 @@ var product = [
          dis1: "Gently Cleanses | Retains Moisture |Fruity Essence",
          review: ":✨:4.8|:✅:793 reviews",
          price: 499,
+         discription:"soap",
          id:108
       },
 
@@ -394,6 +415,7 @@ var product = [
          dis1: "Gently Cleanses Skin|Sulfate-Free | Fruity Essence",
          review: ":✨:4.8|:✅:793 reviews",
          price: 299,
+         discription:"bodywash",
          id:109
       },
 
@@ -403,6 +425,7 @@ var product = [
          dis1: "Gently Nourishes Skin | Makes Skin Soft & Supple",
          review: ":✨:4.8|:✅:793 reviews",
          price: 798,
+         discription:"bodywash",
          id:110
       },
 
@@ -412,6 +435,7 @@ var product = [
          dis1: "Gently Cleanses | Sulfate-Free | Keeps Skin Soft",
          review: ":✨:4.8|:✅:793 reviews",
          price: 598,
+         discription:"bodywash",
          id:111
       },
 
@@ -421,6 +445,7 @@ var product = [
          dis1: "Gently Nourishes | Makes Skin Soft & Supple",
          review: ":✨:4.8|:✅:793 reviews",
          price: 399,
+         discription:"bodywash",
          id:112
       },
 
@@ -430,6 +455,7 @@ var product = [
          dis1: "Gently Nourishes | Makes Skin Soft & Supple",
          review: ":✨:4.8|:✅:793 reviews",
          price: 399,
+         discription:"bodylotion",
          id:113
 
       },
@@ -440,6 +466,7 @@ var product = [
          dis1: "Gently Nourishes | Makes Skin Soft & Supple",
          review: ":✨:4.8|:✅:793 reviews",
          price: 399,
+         discription:"bodylotion",
          id:114
       },
 
@@ -449,6 +476,7 @@ var product = [
          dis1: "Gently Nourishes | Makes Skin Soft & Supple",
          review: ":✨:4.8|:✅:793 reviews",
          price: 399,
+         discription:"bodylotion",
          id:115
       },
 
@@ -458,6 +486,7 @@ var product = [
          dis1: "Deeply Nourishes Skin | 24-Hour Moisturization",
          review: ":✨:4.8|:✅:793 reviews",
          price: 399,
+         discription:"bodylotion",
          id:116
       },
 
@@ -467,6 +496,7 @@ var product = [
          dis1: "Gently Cleanses Hair | Balances Scalp pH",
          review: ":✨:4.8|:✅:793 reviews",
          price: 280,
+         discription:"shampoo",
          id:117
       },
 
@@ -476,6 +506,7 @@ var product = [
          dis1: " 12-Hour Moisturization | Heals Chapped Lips",
          review: ":✨:4.8|:✅:793 reviews",
          price: 199,
+         discription: "lipblam",
          id:118
       },
 
@@ -485,6 +516,7 @@ var product = [
          dis1: "Prevents Rashes | Soothes Redness & Itching",
          review: ":✨:4.8|:✅:793 reviews",
          price: 199,
+         discription:"cream",
          id:119
       },
 
@@ -494,6 +526,7 @@ var product = [
          dis1: " Removes Tough Stains | Eliminates Odor",
          review: ":✨:4.8|:✅:793 reviews",
          price: 599,
+         discription:"detergent",
          id:120
       },
 
@@ -503,6 +536,7 @@ var product = [
          dis1: "Removes Tough Stains | Eliminates Odor",
          review: ":✨:4.8|:✅:793 reviews",
          price: 199,
+         discription:"detergent",
          id:121
 
       },
@@ -513,18 +547,10 @@ var product = [
          dis1: "Relieves Congestion |Promotes Easy Breathing",
          review: ":✨:4.8|:✅:793 reviews",
          price: 199,
+         discription:"detergent",
          id:122
       },
 
-      {
-         img_url: "https://honasa-mamaearth-production.imgix.net/f/d/fds_8272.probs__bbyeqaj8igzukojb.jpg?auto=format&fit=crop&w=332&auto=compress",
-         dis: "Breathe Easy Vapour Roll-on, 40ml",
-         dis1: "Relieves Congestion |Promotes Easy Breathing",
-         review: ":✨:4.8|:✅:793 reviews",
-         price: 249,
-         id:123
-
-      },
 
       {
          img_url: "https://honasa-mamaearth-production.imgix.net/d/i/diapers-xl-1.jpg?auto=format&fit=crop&w=332&auto=compress",
@@ -532,7 +558,8 @@ var product = [
          dis1: "2x Absorbtion | 12-Hour Leak Protection",
          review: ":✨:4.8|:✅:793 reviews",
          price: 699,
-         id:124
+         id:124,
+         discription:"diaper",
          
 
       },
@@ -543,6 +570,7 @@ var product = [
          dis1: "2x Absorbtion | 12-Hour Leak Protection",
          review: ":✨:4.8|:✅:793 reviews",
          price: 699,
+         discription:"diaper",
          id:125
       },
 
@@ -552,6 +580,7 @@ var product = [
          dis1: "2x Absorbtion | 12-Hour Leak Protection",
          review: ":✨:4.8|:✅:793 reviews",
          price: 699,
+         discription:"diaper",
          id:126
       },
 
@@ -561,6 +590,7 @@ var product = [
          dis1: "2x Absorbtion | 12-Hour Leak Protection",
          review: ":✨:4.8|:✅:793 reviews",
          price: 699,
+         discription:"diaper",
          id:127
       },
 
@@ -570,6 +600,7 @@ var product = [
          dis1: "Promotes Healthy Teeth & Gums | Safe, If Swallowed",
          review: ":✨:4.8|:✅:793 reviews",
          price: 149,
+         discription:"toothpaste",
          id:128
       },
 
@@ -579,6 +610,7 @@ var product = [
          dis1: "Perfect for Sensitive Skin | 100% Organic Bamboo",
          review: ":✨:4.8|:✅:793 reviews",
          price: 747,
+         discription:"wipes",
          id:129
       },
 
@@ -588,6 +620,7 @@ var product = [
          dis1: " Relieves Discomfort | Gentle Care | Natural",
          review: ":✨:4.8|:✅:793 reviews",
          price: 1743,
+         discription:"wintercream",
          id:130
       }
    ]
@@ -607,7 +640,25 @@ var product = [
       imaged.src = chooseimage
       var arrAddcart = JSON.parse(localStorage.getItem("cartdata")) || [];
       display(product)
+        var form = document.getElementById("form")
+    form.addEventListener("submit", function () {
+        searching()
+    })
+
+    function searching() {
+        event.preventDefault()
+
+        var dis = form.inputbox.value
+        var X = product.filter(function (ele) {
+            if (ele.discription == dis)
+                return ele.discription
+        });
+
+        display(X)
+    }
+
       function display(product) {
+         document.querySelector(".conatiner").innerHTML = ""
          product.forEach(function (ele) {
             console.log(ele)
             var dataofbeautypro = document.querySelector(".conatiner")
@@ -619,6 +670,10 @@ var product = [
             disp.innerText = ele.dis
             h5 = document.createElement("h5")
             h5.innerText = ele.dis1
+
+            dis = document.createElement("h5")
+            dis.setAttribute("id", disp)
+            dis.innerText = ele.discription
             rs = document.createElement("p")
             rs.setAttribute("class", "rs")
             rs.innerText = "Rs"+ele.price
@@ -639,7 +694,7 @@ var product = [
             sell = document.createElement("div")
             sell.setAttribute("class", "sell")
             sell.innerText = "BestSeller"
-            div1.append(img, disp, h5, rs, h6, button, sell)
+            div1.append(img, disp, h5, rs,dis, h6, button, sell)
             dataofbeautypro.append(div1)
          })
       }

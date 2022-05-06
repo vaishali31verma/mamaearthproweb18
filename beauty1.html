@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <title>Document</title>
-    
-    <style>
 
-        .conatiner{
+    <style>
+        .conatiner {
             display: grid;
-            grid-template-rows:auto;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            grid-template-columns: repeat(4, 1fr);
             gap: 40px;
             text-align: center;
             width: 90%;
             margin: auto;
             margin-top: 100px;
-            
+
         }
 
-        .conatiner>div{
+        .conatiner>div {
             position: relative;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
             width: 100%;
             min-height: fit-content;
-            
+
         }
 
         .conatiner>div>img {
@@ -62,7 +62,7 @@
             margin-right: 4px;
             margin-bottom: 0%;
 
-        } 
+        }
 
         #box>h5 {
             color: darkgreen;
@@ -76,8 +76,8 @@
         .rs {
             font-size: 25px;
             font-weight: bold;
-            margin-top: 1px; 
-             margin-bottom: 0px;
+            margin-top: 1px;
+            margin-bottom: 0px;
         }
 
         h6 {
@@ -106,7 +106,7 @@
             margin: auto;
             margin-top: 20px;
         }
-      
+
         .lastsec {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -129,139 +129,157 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: 500;
         }
+
         body {
-    font-family: sans-serif;
-}
+            font-family: sans-serif;
+        }
 
-#main {
-    border: 1px solid rgb(199, 196, 196);
-    display: flex;
-    width: 100%;
-    height: 70px;
-    align-items: center;
-    margin: auto;
-    border-radius: 5px;
-}
+        #main {
+            border: 1px solid rgb(199, 196, 196);
+            display: flex;
+            width: 100%;
+            height: 70px;
+            align-items: center;
+            margin: auto;
+            border-radius: 5px;
+        }
 
-#main>img {
-    width: 170px;
-    height: 30px;
-    margin-left: 30px;
-    cursor: pointer;
-}
+        #main>img {
+            width: 170px;
+            height: 30px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
 
-#input {
-    margin-left: 30px;
-    display: flex;
-}
+        #input {
+            margin-left: 30px;
+            display: flex;
+        }
 
-#input>input {
-    width: 700px;
-    height: 35px;
-    border: 0.5px solid rgb(199, 196, 196);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-left: 10px;
-    box-sizing: border-box;
-    background-color: rgb(241, 241, 250);
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 16px;
-    line-height: 12px;
-}
+        #input>input {
+            width: 700px;
+            height: 35px;
+            border: 0.5px solid rgb(199, 196, 196);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            background-color: rgb(241, 241, 250);
+            font-style: normal;
+            font-weight: 400px;
+            font-size: 16px;
+            line-height: 12px;
+        }
 
-#search {
-    border: 0.5px;
-    display: flex;
-    height: 35px;
-    width: 80px;
-    background-color: #00afef;
-    gap: 5px;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    margin-left: -2px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    cursor: pointer;
+        #search {
+            border: 0.5px;
+            display: flex;
+            height: 35px;
+            width: 80px;
+            background-color: #00afef;
+            gap: 5px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            margin-left: -2px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            cursor: pointer;
 
-}
+        }
 
-#icon {
-    display: flex;
-    /* border: 1px solid; */
-    width: 400px;
-    height: 70px;
-    margin-left: 15px;
-    justify-content: space-around;
-    align-items: center;
+        #icon {
+            display: flex;
+            /* border: 1px solid; */
+            width: 400px;
+            height: 70px;
+            margin-left: 15px;
+            justify-content: space-around;
+            align-items: center;
 
-}
+        }
 
-.icon {
-    margin-top: 25px;
-    font-size: 25px;
-    color: #00afef;
-    cursor: pointer;
-}
+        .icon {
+            margin-top: 25px;
+            font-size: 25px;
+            color: #00afef;
+            cursor: pointer;
+        }
 
-.acc {
-    margin-top: -0.3px;
-    margin-left: -10px;
-    color: #137ae1;
-    font-style: normal;
-    font-weight: 800px;
-    font-size: 15px;
-    line-height: 12px;
-    cursor: pointer;
-}
+        .acc {
+            margin-top: -0.3px;
+            margin-left: -10px;
+            color: #137ae1;
+            font-style: normal;
+            font-weight: 800px;
+            font-size: 15px;
+            line-height: 12px;
+            cursor: pointer;
+        }
 
-.lis {
-    margin-top: -0.3px;
-    color: rgb(14, 190, 225);
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 20px;
-    line-height: 12px;
-    margin-left: 3px;
-    cursor: pointer;
-}
+        .lis {
+            margin-top: -0.3px;
+            color: rgb(14, 190, 225);
+            font-style: normal;
+            font-weight: 400px;
+            font-size: 20px;
+            line-height: 12px;
+            margin-left: 3px;
+            cursor: pointer;
+        }
 
-.cart {
-    margin-top: -0.3px;
-    color: #2f3337;
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 15px;
-    line-height: 12px;
-    cursor: pointer;
-}
+        .cart {
+            margin-top: -0.3px;
+            color: #2f3337;
+            font-style: normal;
+            font-weight: 400px;
+            font-size: 15px;
+            line-height: 12px;
+            cursor: pointer;
+        }
 
-#new {
-    display: flex;
-    gap: 40px;
-    font-weight: bolder;
-    color: rgb(74, 74, 74);
-    /* margin-left: 80px; */
-    border-bottom: 0.5px solid #2f3337;
-    padding-left: 80px;
-}
-#new>p>a{
-    color: #2f3337;
-    text-decoration: none;
-}
+        #new {
+            display: flex;
+            gap: 40px;
+            font-weight: bolder;
+            color: rgb(74, 74, 74);
+            /* margin-left: 80px; */
+            border-bottom: 0.5px solid #2f3337;
+            padding-left: 80px;
+        }
+
+        #new>p>a {
+            color: #2f3337;
+            text-decoration: none;
+        }
+
+        #inputbox {
+            width: 800px;
+            height: 25px;
+        }
+
+        #submit {
+            width: 9%;
+            color: white;
+            background-color: #00afef;
+            border-radius: 7px;
+            height: 30px;
+        }
+
+        #form {
+            display: flex;
+        }
     </style>
 </head>
+
 <body>
     <div id="main">
         <img src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale" alt="">
-        <div id="input">
-            <input type="text" placeholder="Search">
-            <div id="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <p>Search</p>
-            </div>
-        </div>
+        <form id="form">
+            <input type="text" placeholder="Search" value="" id="inputbox">
+            <input type="submit" value="Search" id="submit">
+        </form>
+        <!-- </div> -->
         <div id="icon">
             <div>
                 <i class="fa-solid fa-cart-shopping icon"></i>
@@ -290,7 +308,7 @@
     </div>
 
     <img src="https://images.ctfassets.net/66mrrren2unf/4usS7VI6DjrDrBwNpl5ngu/580d570b03cf60849ec9682467b3fce4/Desktop.jpg?q=40"
-    alt="mamaearth" id="logo" onmouseleave="setnewimg()">
+        alt="mamaearth" id="logo" onmouseleave="setnewimg()">
     <div class="conatiner">
     </div>
 
@@ -326,65 +344,75 @@
     </div>
 
 </body>
+
 </html>
 
 <script>
- var beautydata = [
+
+    var beautydata = [
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/c/h/charcoal-face-wash-1.jpg?auto=format&fit=crop&w=332&auto=compress",
             dis: "Charcoal Facewash for oil control, 100ml",
             dis1: "Pollution Defense Formula | Controls Excess Oil",
             price: 249,
             review: "✨4.8|✔793 reviews",
-            id:50
+            discription: "oil",
+            id: 50
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/t/e/tea-tree-face-wash-1.jpg?auto=format&fit=crop&w=332&auto=compress",
             dis: "Tea Tree Facewash for acne and pimples, 100ml",
             dis1: "Controls Acne & Pimples | Removes Excess Oil",
             price: 249,
+            discription: "Facewash",
             review: "✨4.8|✔793 reviews",
-            id:51
+            id: 51
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/a/l/aloevera-gel-moisturizer-1.jpg?auto=format&fit=crop&w=332&auto=compress",
             dis: "Aloe Vera Gel Moisturizer with Aloe Vera & Ashwagandha for a Youthful Glow - 100 g",
             dis1: "Gives a Youthful Glow",
             price: 499,
+            discription: "gel",
             review: "✨4.8|✔793 reviews",
-            id:52
+            id: 52
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/k/o/kohl-3_3_5.jpg?auto=compress&fit=scale&w=400&h=400",
             dis: "Bye Bye wrinkle face cream with goodness of neem",
             dis1: "Tightning pores with nicacinamide non greacy",
             price: 234,
+            discription: "cream",
             review: "✨4.8|✔793 reviews",
-            id:53},
-            
+            id: 53
+        },
+
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/h/y/hyaluronic_bamboo_sheet_mask_1.jpg?auto=compress&fit=scale&w=400&h=400",
             dis: "Bye Bye wrinkle facesheet mast with goodness of neem",
             dis1: "Tightning pores with nicacinamide non greacy",
             price: 99,
+            discription: "cream",
             review: "✨4.8|✔793 reviews",
-            id:54
+            id: 54
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/a/l/aloe-vera-sunscreen-face-serum.jpg?auto=compress&fit=scale&w=400&h=400",
             dis: "Bye Bye wrinkle facesheet mast with goodness of neem",
             dis1: "Tightning pores with nicacinamide non greacy",
             price: 99,
+            discription: "sheet",
             review: "✨4.8|✔793 reviews",
-            id:55
+            id: 55
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/v/i/vitamin-c-underarm-scrub.jpg?auto=format&fit=crop&w=332&auto=compress",
             dis: "Vitamin C Underarm Scrub with Vitamin C and Turmeric for Brighter Underarms – 50 g",
             dis1: "Gently Exfoliates | Brigthens Underarms",
             price: 299,
+            discription: "scrub",
             review: "✨4.8|✔793 reviews",
-            id:56
+            id: 56
 
         },
 
@@ -393,16 +421,18 @@
             dis: "Vitamin C Underarm Mask with Vitamin C & Turmeric for Brighter Underarms - 50 g",
             dis1: "Brightens Underarms",
             price: 299,
+            discription: "mask",
             review: "✨4.8|✔793 reviews",
-            id:57
+            id: 57
 
-        },{
+        }, {
             img_url: "https://honasa-mamaearth-production.imgix.net/r/o/roots-of-radiance-essence-serum_2_1.jpg?auto=format&fit=crop&w=332&auto=compress",
             dis: "Roots of Radiance Essence Serum with Ashwagandha & Turmeric for Radiant Skin – 30 ml",
             dis1: "Makes Skin Radiant | Lightweight |Deeply Hydrates",
             price: 599,
+            discription: "cream",
             review: "✨4.8|✔793 reviews",
-            id:58
+            id: 58
 
         },
         {
@@ -410,16 +440,18 @@
             dis: "Charcoal Face Wash with Activated Charcoal and Coffee for Oil Control - 250ml",
             dis1: "Pollution Defense Formula | Controls Excess Oil",
             price: 399,
+            discription: "facewash",
             review: "✨4.8|✔793 reviews",
-            id:59
+            id: 59
 
-        },{
+        }, {
             img_url: "https://honasa-mamaearth-production.imgix.net/p/e/perfume-1_3.jpg?auto=format&fit=crop&w=332&auto=compress",
             dis: "Mamaearth ME Eau De Parfum For a Fragrance As Unique As You - 8 ml Kit",
             dis1: "Unique Individual Fragrance |Lasts Upto 12 Hours",
             price: 312,
+            discription: "perfume",
             review: "✨4.8|✔793 reviews",
-            id:60
+            id: 60
 
         },
         {
@@ -427,8 +459,9 @@
             dis: "Almond Beard Oil with Almond & Biotin For Beard Nourishment – 30 ml",
             dis1: "Nourishes & Thickens Beard | Light & Non-Greasy",
             price: 499,
+            discription: "oil",
             review: "✨4.8|✔793 reviews",
-            id:61
+            id: 61
 
         },
         {
@@ -436,8 +469,9 @@
             dis: "BhringAmla Shampoo with Bhringraj and Amla for Intense Hair Treatment - 250 ml",
             dis1: "Repairs Damaged Hair | Boosts Hair Growth",
             price: 349,
+            discription: "shampoo",
             review: "✨4.8|✔793 reviews",
-            id:62
+            id: 62
 
         },
         {
@@ -445,8 +479,9 @@
             dis: "Ubtan Body Scrub with Turmeric and Saffron for Tan Removal - 200 g",
             dis1: "Deeply Exfoliates | Removes Tan | Brightens Skin",
             price: 499,
+            discription: "scrub",
             review: "✨4.8|✔793 reviews",
-            id:63
+            id: 63
 
         },
         {
@@ -454,133 +489,175 @@
             dis: "Aqua Glow Skin Refreshing Kit for Hydrated & Fresh Skin",
             dis1: "Cleanses | Hydrates | Protects | Non-Sticky",
             price: 1123,
+            discription: "facewash",
             review: "✨4.8|✔793 reviews",
-            id:64
+            id: 64
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/v/i/vitamin-c-lip-balm_1_1.jpg?auto=format&fit=crop&w=332&auto=compress",
             dis: "Mamaearth Vitamin C Tinted 100% Natural Lip Balm with Vitamin C & Honey - 2 g",
             dis1: "12-Hour Moisturization | Natural Orange Tint",
             price: 299,
+            discription: "lipblam",
             review: "✨4.8|✔793 reviews",
-            id:65
+            id: 65
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/v/i/vitamin-c-face-wash_2_1_8up0nipzzkyzwwx1.jpg?auto=format&fit=crop&w=332&auto=compress",
             dis: "Vitamin C Face Wash with Vitamin C and Turmeric for Skin Illumination - 250ml",
             dis1: "Brightens Skin | Promotes Even Skin Tone",
             price: 399,
+            discription: "facewash",
             review: "✨4.8|✔793 reviews",
-            id:66
+            id: 66
         },
         {
             img_url: "https://honasa-mamaearth-production.imgix.net/u/b/ubtan-lip-balm_1_1.jpg?auto=format&fit=crop&w=332&auto=compress",
             dis: "Ubtan Tinted 100% Natural Lip Balm with Turmeric & Saffron - 2 g",
             dis1: "12-Hour Moisturization | Heals Dry & Chapped Lip",
             price: 299,
+            discription: "lipblam",
             review: "✨4.8|✔793 reviews",
-            id:67
+            id: 67
         },
 
     ]
 
-        function setnewimg() {
-    imaged = document.getElementById("logo")
-    let images = ["https://images.ctfassets.net/66mrrren2unf/5dElTf4nIm0q7zDEmWgU4j/bcd1ab0f30ea5fef52e00b2436658dcb/Desktop_Henna-Paste-with-CTA.jpg?q=40",
-        "https://images.ctfassets.net/66mrrren2unf/2nFAFSa68RorsrU94U5pO9/90708e3f5bd6f312d9911b63e4977a3e/desktop-body-wash.jpg?q=40", "https://images.ctfassets.net/66mrrren2unf/4ZxCZpdHR9x7MBSqyxGVg2/b118c0c231fcc43c8531479834cba44f/Desktop.jpg?q=40",
-        "https://images.ctfassets.net/66mrrren2unf/4usS7VI6DjrDrBwNpl5ngu/580d570b03cf60849ec9682467b3fce4/Desktop.jpg?q=40"]
+    function setnewimg() {
+        imaged = document.getElementById("logo")
+        let images = ["https://images.ctfassets.net/66mrrren2unf/5dElTf4nIm0q7zDEmWgU4j/bcd1ab0f30ea5fef52e00b2436658dcb/Desktop_Henna-Paste-with-CTA.jpg?q=40",
+            "https://images.ctfassets.net/66mrrren2unf/2nFAFSa68RorsrU94U5pO9/90708e3f5bd6f312d9911b63e4977a3e/desktop-body-wash.jpg?q=40", "https://images.ctfassets.net/66mrrren2unf/4ZxCZpdHR9x7MBSqyxGVg2/b118c0c231fcc43c8531479834cba44f/Desktop.jpg?q=40",
+            "https://images.ctfassets.net/66mrrren2unf/4usS7VI6DjrDrBwNpl5ngu/580d570b03cf60849ec9682467b3fce4/Desktop.jpg?q=40"]
 
-    let imageslength = images.length;
-    let randomnum = Math.random();
-    randomnum = randomnum * imageslength;
-    randomnum = Math.floor(randomnum)
-    let chooseimage = images[randomnum]
-    imaged.src = chooseimage
-
-    display(beautydata)
-
-
-   function display(data){
-    
-     data.forEach(function(ele){
-        var dataofbeautypro= document.querySelector(".conatiner")
-
-        div1 = document.createElement("div")
-    
-
-        img = document.createElement("img")
-        img.src = ele.img_url
-        
-        disp = document.createElement("p")
-        disp.innerText = ele.dis
-
-
-        h5 = document.createElement("h5")
-        h5.innerText = ele.dis1
-
-       rs = document.createElement("p")
-       rs.setAttribute("class","rs")
-       rs.innerText ="Rs"+ ele.price
-
-
-       h6 = document.createElement("h6")
-       h6.innerText = ele.review
-
-       buttom = document.createElement("button")
-       buttom.setAttribute("class","addcart")
-       buttom.innerText = "Add to Cart"
-       buttom.addEventListener("click",function(){
-             addtocart(ele)
-       })
-
-       sell = document.createElement("div")
-       sell.setAttribute("class","sell")
-       sell.innerText = "BestSeller"
-
-
-       div1.append(img,disp,h5,rs,h6,buttom,sell)
-      dataofbeautypro.append(div1)
-     })
-
-   }
-
-}
+        let imageslength = images.length;
+        let randomnum = Math.random();
+        randomnum = randomnum * imageslength;
+        randomnum = Math.floor(randomnum)
+        let chooseimage = images[randomnum]
+        imaged.src = chooseimage
 
 
 
-var cartArr = JSON.parse(localStorage.getItem("cartdata")) || [];
-    document.querySelector(".lis").innerText= cartArr.length
-    function addtocart(ele) {
-     
-      var exist = cartArr.filter(function(el){
-          return ele.id == el.id
-      })
-      if(exist.length>0){
-          alert("product already exist")
+        display(beautydata)
+        var form = document.getElementById("form")
+    form.addEventListener("submit", function () {
+        searching()
+    })
 
-      }
-      else{
-        ele.quan = 1 
-        cartArr.push(ele)
-        localStorage.setItem("cartdata",JSON.stringify(cartArr));
-        alert("product added sucessfully")
-        document.querySelector(".lis").innerText= cartArr.length 
-      }
-     
+    function searching() {
+        event.preventDefault()
+
+        var dis = form.inputbox.value
+        var X = beautydata.filter(function (ele) {
+            if (ele.discription == dis)
+                return ele.discription
+        });
+
+        display(X)
     }
- 
-    
-    document.querySelector(".acc").addEventListener("click",function(){
+
+
+
+        function display(data) {
+            document.querySelector(".conatiner").innerHTML = ""
+            data.forEach(function (ele) {
+                var dataofbeautypro = document.querySelector(".conatiner")
+
+                div1 = document.createElement("div")
+
+
+                img = document.createElement("img")
+                img.src = ele.img_url
+
+                disp = document.createElement("p")
+                disp.innerText = ele.dis
+
+
+
+                h5 = document.createElement("h5")
+                h5.innerText = ele.dis1
+
+                dis = document.createElement("h5")
+                dis.setAttribute("id", disp)
+                dis.innerText = ele.discription
+
+                rs = document.createElement("p")
+                rs.setAttribute("class", "rs")
+                rs.innerText = "Rs" + ele.price
+
+
+                h6 = document.createElement("h6")
+                h6.innerText = ele.review
+
+                buttom = document.createElement("button")
+                buttom.setAttribute("class", "addcart")
+                buttom.innerText = "Add to Cart"
+                buttom.addEventListener("click", function () {
+                    addtocart(ele)
+                })
+
+                sell = document.createElement("div")
+                sell.setAttribute("class", "sell")
+                sell.innerText = "BestSeller"
+
+
+                div1.append(img, disp, h5, rs, h6, buttom, sell)
+                dataofbeautypro.append(div1)
+            })
+
+        }
+
+    }
+  
+
+
+    var cartArr = JSON.parse(localStorage.getItem("cartdata")) || [];
+    document.querySelector(".lis").innerText = cartArr.length
+    function addtocart(ele) {
+
+        var exist = cartArr.filter(function (el) {
+            return ele.id == el.id
+        })
+        if (exist.length > 0) {
+            alert("product already exist")
+
+        }
+        else {
+            ele.quan = 1
+            cartArr.push(ele)
+            localStorage.setItem("cartdata", JSON.stringify(cartArr));
+            alert("product added sucessfully")
+            document.querySelector(".lis").innerText = cartArr.length
+        }
+
+    }
+
+
+    document.querySelector(".acc").addEventListener("click", function () {
         window.location.href = "login.html"
     })
-    document.querySelector(".lis").addEventListener("click",function(){
+    document.querySelector(".lis").addEventListener("click", function () {
         window.location.href = "cart.html"
     })
 
 
 
-var login = JSON.parse(localStorage.getItem("login"))
-    document.querySelector(".acc").innerText =  login.fullName
+    var login = JSON.parse(localStorage.getItem("login"))
+    document.querySelector(".acc").innerText = login.fullName
 
-    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
