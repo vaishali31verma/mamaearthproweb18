@@ -21,6 +21,14 @@
 
 }
 
+#lname {
+
+    padding: 10px 50px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 0px;
+
+}
+
 #mail {
     padding: 10px 50px 10px 0px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -33,6 +41,10 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border: 0px;
 
+}
+
+#container {
+    margin-bottom: 400px;
 }
 
 #pincode,
@@ -138,4 +150,39 @@
 
 .title {
     margin-top: 150px;
+}
+
+#LS {
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    border-color: #00afef;
+    color: #00afef;
+}
+
+h5 {
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+    margin-top: -400px;
+}
+
+#mama {
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -100%;
+
+}
+
+.mama {
+    width: 50%;
+    margin-left: 50%;
+    /* margin-top: -50%; */
 }
