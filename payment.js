@@ -5,7 +5,7 @@ form.addEventListener("submit", function () {
     event.preventDefault()
     var obj = {
         name: document.getElementById("name").value,
-        name: document.getElementById("name").value,
+        lname: document.getElementById("lname").value,
         mail: document.getElementById("mail").value,
         Number: document.getElementById("Number").value,
         pincode: document.getElementById("pincode").value,
@@ -18,19 +18,20 @@ form.addEventListener("submit", function () {
         namec: document.getElementById("namec").value
 
     }
-    // if (name == "" || name == "" || mail == "" || Number == "" || pincode == "" || city == "" || state == "") {
+    // if (name == "" || lname == "" || mail == "" || Number == "" || pincode == "" || city == "" || state == "") {
 
     //     alert("All the address fields are mandatory")
     // }
     // else if (cardno.length == 16 && cvv.length == 3) {
-    //     window.location.href = "index.html";
+    //     alert("Sucessfully added")
+
     // }
-    
+
     // else {
     //     alert("Invalid numbers");
     // }
-
-
+    // window.location.href = "placed.html";
+    alert("Sucessfully added")
     Arr.push(obj)
     console.log(Arr)
     localStorage.setItem("payment", JSON.stringify(Arr))
