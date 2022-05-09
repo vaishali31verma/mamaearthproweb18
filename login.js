@@ -10,6 +10,7 @@ form.addEventListener("submit",function(event){
     event.preventDefault()
     if(signUpArr.length==0){
         alert("User Does'nt exist signup first")
+        window.location.href = "signup.html"
     }
     else{
     var objlogin = {
@@ -33,7 +34,7 @@ function display(objlogin){
             }
             else if(elem.Email==objlogin.Email && elem.password==objlogin.password){
                 alert("login sucessfully")
-                window.location.href = "home.html"
+                window.location.href = "index.html"
                 localStorage.setItem("login",JSON.stringify(objlogin))
             }
     })

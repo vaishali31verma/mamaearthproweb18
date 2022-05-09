@@ -31,11 +31,20 @@ form.addEventListener("submit", function () {
     //     alert("Invalid numbers");
     // }
     // window.location.href = "placed.html";
-    alert("Sucessfully added")
+    alert("Confirming your details, Please wait.....")
+    
     Arr.push(obj)
     console.log(Arr)
     localStorage.setItem("payment", JSON.stringify(Arr))
     window.location.href = "placed.html"
 })
 
+
+document.querySelector(".log").addEventListener("click",function(){
+    submitdata()
+})
+
+function submitdata(){
+    window.location.href = "login.html"
+}
 

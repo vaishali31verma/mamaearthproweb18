@@ -156,6 +156,7 @@
     margin-top: 50px;
     display: flex;
     gap: 15px;
+    margin-left: 25px;
 }
 
 button {
@@ -186,3 +187,14 @@ img {
     margin-left: 50%;
     /* margin-top: -50%; */
 }
+body {
+    background-image: url('https://www.payuoc.com/wp-content/uploads/2020/04/Mama-Earth-Logo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    /* width: 500%; */
+   
+  }
+  #head{
+      margin: 29px;
+  }

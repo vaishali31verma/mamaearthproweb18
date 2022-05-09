@@ -285,7 +285,7 @@
         </div>
     </div>
     <div id="new">
-        <p><a href="home.html">Home</a></p>
+        <p><a href="index.html">Home</a></p>
         <p><a href="babypro.html">Baby products</a></p>
         <p><a href="beauty1.html">Beauty products</a></p>
 
@@ -437,7 +437,8 @@
             id: 12
         }
     ]
- 
+
+
     function setnewimg() {
         imaged = document.getElementById("logo")
         let images = ["https://images.ctfassets.net/66mrrren2unf/5dElTf4nIm0q7zDEmWgU4j/bcd1ab0f30ea5fef52e00b2436658dcb/Desktop_Henna-Paste-with-CTA.jpg?q=40",
@@ -508,7 +509,15 @@
                 buttom.setAttribute("class", "addcart")
                 buttom.innerText = "Add to Cart"
                 buttom.addEventListener("click", function () {
-                    addtocart(ele)
+                    var login = JSON.parse(localStorage.getItem("login"))
+                    if(login===null){
+                               alert("login first")
+                         window.location.href = "login.html"
+                        } 
+                    else{
+                        addtocart(ele)
+                    }
+                    
                 })
 
                 sell = document.createElement("div")
@@ -528,6 +537,10 @@
 
     var cartArr = JSON.parse(localStorage.getItem("cartdata")) || [];
     document.querySelector(".lis").innerText = cartArr.length
+
+    
+   
+
     function addtocart(ele) {
 
         var exist = cartArr.filter(function (el) {
@@ -546,7 +559,7 @@
         }
 
     }
-
+    // }
 
     document.querySelector(".acc").addEventListener("click", function () {
         window.location.href = "login.html"
@@ -559,7 +572,8 @@
 
     var login = JSON.parse(localStorage.getItem("login"))
     document.querySelector(".acc").innerText = login.fullName
-
+   
+   
 
 
 </script>

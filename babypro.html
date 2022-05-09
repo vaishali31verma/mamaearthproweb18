@@ -284,7 +284,7 @@
       </div>
   </div>
   <div id="new">
-   <p><a href="home.html">Home</a></p>
+   <p><a href="index.html">Home</a></p>
    <p><a href="babypro.html">Baby products</a></p>
    <p><a href="beauty1.html">Beauty products</a></p>
 
@@ -682,7 +682,13 @@ var product = [
             button.setAttribute("class", "addcart")
             button.innerText = "Add to Cart"
             button.addEventListener("click",function(){
-             addtocart(ele)
+               if(login===null){
+                               alert("login first")
+                         window.location.href = "login.html"
+                        } 
+                    else{
+                        addtocart(ele)
+                    }
              })
 
 

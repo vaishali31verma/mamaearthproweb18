@@ -67,9 +67,13 @@
             width: 40%;
             height: 40px;
             font-size: 20px;
-            color: white;
-            background-color: rgb(211, 34, 34);
-            border-radius: 12px;
+            color: rgb(6, 6, 6);
+            background-color: rgb(158, 156, 156);
+            border-radius: 2px;
+            margin-left: 140px;
+            position: relative;
+            bottom: -30px;
+            border: 0px;
           
            
         }
@@ -164,7 +168,7 @@
     cursor: pointer;
 }
 
-#new {
+#new,#new1 {
     display: flex;
     gap: 40px;
     font-weight: bolder;
@@ -177,6 +181,11 @@
     color: #2f3337;
     text-decoration: none;
 }
+#new1>p>a{
+    color: #2f3337;
+    text-decoration: none;
+}
+
 .linesubmit{
     color: #0d2128;
     text-align: center;
@@ -190,6 +199,18 @@
     border: 2px solid rgb(215, 187, 187);
 
 }
+.inc{
+    margin-right: 40px;
+}
+.valuecount{
+    display: block;
+    
+    width: 15px;
+    position: relative;
+    top: -22px;
+    left: 34px;
+    
+}
 
     </style>
 </head>
@@ -202,13 +223,13 @@
         
                         <p class="acc"><a href="login.html">Login</a></p>
                     </div>
-                    <div>
-                        <p class="acc">payment</p>
+                    <div id="new1">
+                        <p class="acc"><a href="payment.html">Payment</a></p>
                     </div>
             </div>
         </div>
         <div id="new">
-            <p><a href="home.html">Home</a></p>
+            <p><a href="index.html">Home</a></p>
             <p><a href="babypro.html">Baby products</a></p>
             <p><a href="beauty1.html">Beauty products</a></p>
     
