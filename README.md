@@ -1,13 +1,13 @@
 # mamaearth
 clone of MamaEarth website using html css and Javascript 
-#Login/Sign-up Page
+## Login/Sign-up Page
 - User can enter their mobile number on sign-up page.
 - Then click sign-up button for sign-up process completion.
 - After which user will be forwarded to sign-in page.
 - Upon clicking on verify button otp will be displayed in form of alert.
 - Enter otp and then hit verify again.
 - User will be looged-in now & your username is visible at nav-bar on landing page.
-#Landing Page
+## Landing Page
 - Nav-bar is visible on top with user mobile number.
 - Nav-bar also consists of explore tab like medicine, wellness etc.
 - Explore Tabs also contain multiple web-pages which can be seen upon hovring on text.
@@ -15,11 +15,11 @@ clone of MamaEarth website using html css and Javascript
 -Coupon Page consists of all coupen codes & offers with vilidity details.
 -If you scroll down on landing-page you can view different product categories & footer at the end.
 -To view product-page click on View all option on right hand-side of shop-by category heading.
-#Product Page
+## Product Page
 -Here users can filter based on price of the product.
 -To add item to cart, click on add to cart button.
 -Upload clicking again, added item will be removed from cart.
-#Cart Page
+## Cart Page
 - All items added to cart will be shown here.
 - In here, users can increase the quantity by clicking on add button.
 - To decrease the quantity, users can click on del button.
